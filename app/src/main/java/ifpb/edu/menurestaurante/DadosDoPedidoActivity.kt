@@ -1,5 +1,6 @@
 package ifpb.edu.menurestaurante
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ifpb.edu.menurestaurante.databinding.ActivityDadosDoPedidoBinding
@@ -28,5 +29,12 @@ class DadosDoPedidoActivity : AppCompatActivity() {
                 "Chocolate: $quant_chocolate Preço:${quant_chocolate*preco_chocolate}R$\n";
 
         binding.textResumo.setText(texto)
+
+        binding.btnVoltar.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java) // Substitua MainActivity pela sua tela inicial
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish() // Opcional: Finaliza a atividade atual
+        }
     }
 }
