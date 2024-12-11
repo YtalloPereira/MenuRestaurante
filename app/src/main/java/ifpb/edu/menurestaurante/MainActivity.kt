@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
             i.putExtra("preco_chocolate", precoDoChocolate)
             i.putExtra("preco_pao", precoDoPao)
-            i.putExtra("quant_cafe", precoDoCafe)
+            i.putExtra("preco_cafe", precoDoCafe)
 
             startActivity(i)
         }

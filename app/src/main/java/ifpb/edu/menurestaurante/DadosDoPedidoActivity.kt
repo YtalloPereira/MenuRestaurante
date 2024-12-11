@@ -11,7 +11,7 @@ class DadosDoPedidoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDadosDoPedidoBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_dados_do_pedido)
+        setContentView(binding.root)
 
         val i = intent
         val quant_cafe = i.getStringExtra("quant_cafe").toString().toInt()
@@ -19,8 +19,8 @@ class DadosDoPedidoActivity : AppCompatActivity() {
         val quant_chocolate = i.getStringExtra("quant_chocolate").toString().toInt()
 
         val preco_cafe = i.getDoubleExtra("preco_cafe", 0.0)
-        val preco_pao = i.getDoubleExtra("preco_cafe", 0.0)
-        val preco_chocolate = i.getDoubleExtra("preco_cafe", 0.0)
+        val preco_pao = i.getDoubleExtra("preco_pao", 0.0)
+        val preco_chocolate = i.getDoubleExtra("preco_chocolate", 0.0)
 
         val texto = "Resumo do Pedido: \n" +
                 "Café: $quant_cafe Preço:${quant_cafe*preco_cafe}R$\n" +
