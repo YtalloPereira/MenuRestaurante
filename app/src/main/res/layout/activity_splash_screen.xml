@@ -5,13 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/backgroundColor"
     tools:context=".SplashScreenActivity">
-    
+
+    <!-- Logo or Icon -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icone"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Loading Text -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30sp"
-        android:text="Estamos Preparando Seu Pedido!"/>
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        android:text="Estamos Preparando Seu Pedido!" />
+
+    <!-- Animated Progress Bar -->
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminate="true"
+        android:layout_marginTop="20dp"
+        android:theme="@style/Widget.AppCompat.ProgressBar" />
+
 </LinearLayout>

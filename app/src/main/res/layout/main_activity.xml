@@ -11,6 +11,12 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icone"
+        android:layout_marginBottom="20dp" />
+
     <!-- Texto de Cabeçalho -->
     <TextView
         android:id="@+id/text_selecione_produtos"

@@ -13,7 +13,12 @@
     <color name="background_color">#F5F5F5</color> <!-- Cor de fundo clara -->
     <color name="text_primary">#333333</color> <!-- Cor principal do texto -->
     <color name="text_secondary">#666666</color> <!-- Cor secundária do texto -->
-    <color name="button_color">#4CAF50</color> <!-- Cor do botão -->
+    <color name="button_color">#9C27B0</color> <!-- Cor do botão -->
     <color name="white">#FFFFFF</color> <!-- Cor branca -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColor">#333333</color>
+    <color name="primaryTextColor">#333333</color>
+    <color name="buttonColor">#00796B</color>
+
 
 </resources>
