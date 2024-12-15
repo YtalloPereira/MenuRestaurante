@@ -1,153 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:paddingTop="80dp">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_color"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Texto de Cabeçalho -->
+    <TextView
+        android:id="@+id/text_selecione_produtos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione os produtos"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"> <!-- Espaçamento entre os elementos -->
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/item_background"
+        android:layout_marginVertical="5dp">
 
         <CheckBox
+            android:id="@+id/check_cafe"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/check_cafe"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="60dp"
-            android:text="Café"/>
+            android:text="Café"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginHorizontal="30dp"
-            android:src="@drawable/cafe"/>
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/cafe" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quantidade: "/>
+            android:text="Quantidade:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/edit_quantidade_cafe"
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:minWidth="30dp"
+            android:background="@drawable/edit_background"
             android:inputType="number"
-            android:text="0"/>
+            android:text="0"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/text_preco_cafe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:text="1.50R$"
-            android:visibility="gone"/> <!-- Alterado para visível -->
+            android:textColor="@color/text_secondary"
+            android:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/item_background"
+        android:layout_marginVertical="5dp">
 
         <CheckBox
             android:id="@+id/check_pao"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="60dp"
-            android:text="Pão"/>
+            android:text="Pão"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginHorizontal="30dp"
-            android:src="@drawable/pao"/>
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/pao" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quantidade: "/>
+            android:text="Quantidade:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/edit_quantidade_pao"
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:minWidth="30dp"
+            android:background="@drawable/edit_background"
             android:inputType="number"
-            android:text="0"/>
+            android:text="0"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/text_preco_pao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:text="0.80R$"
-            android:visibility="gone"/> <!-- Alterado para visível -->
+            android:textColor="@color/text_secondary"
+            android:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/item_background"
+        android:layout_marginVertical="5dp">
 
         <CheckBox
             android:id="@+id/check_chocolate"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="60dp"
-            android:text="Chocolate"/>
+            android:text="Chocolate"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginHorizontal="30dp"
-            android:src="@drawable/chocolate"/>
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/chocolate" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quantidade: "/>
+            android:text="Quantidade:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/edit_quantidade_chocolate"
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:minWidth="30dp"
+            android:background="@drawable/edit_background"
             android:inputType="number"
-            android:text="0"/>
+            android:text="0"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/text_preco_chocolate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
             android:text="2.00R$"
-            android:visibility="gone"/> <!-- Alterado para visível -->
+            android:textColor="@color/text_secondary"
+            android:visibility="gone" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button_pedido"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Realizar Pedido" />
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button_color"
+        android:text="Realizar Pedido"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingVertical="10dp" />
 </LinearLayout>
-
-
-  
